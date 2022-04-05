@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jogo</title>
+    <link href="estilos.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forca</title>
 
-    //https://www.youtube.com/watch?v=KNH_-_esmaI
+  </head>
+  <body>
+    <h1>Forca</h1>
+    <h2>Adivinhe a palavra a seguir:</h2>
+    <div class="setorJogo">
+      <div class="Forca">
+        <svg height="250" width="200" class="forca">
+         
+          <line x1="70" y1="30" x2="150" y2="30" />
+          
+          <line x1="150" y1="30" x2="150" y2="60" />
+          
+          <line x1="70" y1="30" x2="70" y2="240" />
+          
+          <line x1="30" y1="240" x2="110" y2="240" />
+
+       
+          <circle cx="140" cy="70" r="20" class="forca-parte" />
+          
+          <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
+         
+          <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
+          <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
+        
+          <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
+          <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
+        </svg>
+      </div>
+
+      <div class="setorLetrasE">
+        <h3>Letras incorretas</h3>
+      </div>
+    </div>
+
+    <div class="setorSegredo"></div>
+
+    <div class="alertLetra">
+      Letra repetida, escolha outra!
+    </div>
+
+    <div class="setorMensagem">
+      <div class="janela">
+        <h2 id="mensagem"></h2>
+        <button id="jogar" onclick="recomecar()">
+          Jogue outra vez!
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  
 </head>
 <body>
     
 </body>
 </html>
+
+
